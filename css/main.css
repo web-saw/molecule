@@ -66,12 +66,6 @@ h2 {
   font-size: 32px;
 }
 
-.container__black {
-  /*  max-width: 1440px;
-   margin: 0 auto;*/
-  background-color: #1e313b;
-}
-
 .container {
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
@@ -80,6 +74,14 @@ h2 {
   margin-right: auto;
   padding-left: 80px;
   padding-right: 80px;
+}
+
+.container__black {
+  background-color: #1e313b;
+}
+
+.container__gray {
+  background-color: #f6f6f6;
 }
 
 .tag {
@@ -266,20 +268,18 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .features__logo {
-  margin-right: 80px;
+  min-width: 50%;
 }
 
 .features__content {
   max-width: 600px;
+  margin-left: 60px;
 }
 
 .features__tag {
@@ -313,7 +313,7 @@ h2 {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-bottom: 151px;
+  margin-bottom: 127px;
 }
 
 .features__cards + .features__cards {
@@ -348,4 +348,72 @@ h2 {
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
+}
+
+.stats {
+  padding-top: 128px;
+  padding-bottom: 128px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.stats__header {
+  margin-right: 40px;
+}
+
+.stats__tag {
+  background: rgba(151, 231, 71, 0.6);
+  border: 2px solid #97e747;
+  margin-bottom: 30px;
+}
+
+.stats__title {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: calc(35 / 32 * 100%);
+  max-width: 600px;
+}
+
+.stats__title a {
+  color: #97e747;
+  margin-left: 16px;
+  margin-right: 4px;
+}
+
+.stats__body {
+  max-width: 575px;
+  margin-left: 40px;
+}
+
+.stats__text {
+  margin-bottom: 37px;
+  max-width: 575px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.stats__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.stats__item {
+  max-width: 288px;
+  margin-right: 24px;
+}
+
+.stats__item span {
+  font-size: 48px;
+  line-height: 58px;
+  color: #97e747;
 }

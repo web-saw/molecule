@@ -12,3 +12,8 @@ $header_size: 32px;
    font-weight: 700;
    line-height: calc(35 / 32 * 100%);
 }
+@mixin header_norm {
+   font-size: $header_size;
+   font-weight: 400;
+   line-height: calc(35 / 32 * 100%);
+}

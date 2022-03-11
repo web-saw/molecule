@@ -15,11 +15,6 @@ h2 {
    font-size: 32px;
 }
 
-.container__black {
-   /*  max-width: 1440px;
-   margin: 0 auto;*/
-   background-color: $color_text;
-}
 .container {
    box-sizing: content-box;
    max-width: 1280px;
@@ -27,6 +22,12 @@ h2 {
    margin-right: auto;
    padding-left: 80px;
    padding-right: 80px;
+   &__black {
+      background-color: $color_text;
+   }
+   &__gray {
+      background-color: #f6f6f6;
+   }
 }
 .tag {
    display: inline-block;
@@ -172,14 +173,15 @@ h2 {
 .features {
    padding-top: 128px;
    display: flex;
-   align-items: center;
-   justify-content: center;
+   // align-items: center;
+   justify-content: space-between;
    &__logo {
-      margin-right: 80px;
+      min-width: 50%;
    }
 
    &__content {
       max-width: 600px;
+      margin-left: 60px;
    }
 
    &__tag {
@@ -205,7 +207,7 @@ h2 {
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
-      margin-bottom: 151px;
+      margin-bottom: 127px;
       // margin: 24px;
    }
 
@@ -239,5 +241,60 @@ h2 {
       font-weight: 400;
       font-size: 14px;
       line-height: 21px;
+   }
+}
+.stats {
+   padding-top: 128px;
+   padding-bottom: 128px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+   &__header {
+      margin-right: 40px;
+   }
+
+   &__tag {
+      background: rgba(151, 231, 71, 0.6);
+      border: 2px solid #97e747;
+      margin-bottom: 30px;
+   }
+
+   &__title {
+      @include header_norm;
+      max-width: 600px;
+      a {
+         color: $color_green;
+         margin-left: 16px;
+         margin-right: 4px;
+      }
+   }
+
+   &__body {
+      max-width: 575px;
+      margin-left: 40px;
+   }
+
+   &__text {
+      margin-bottom: 37px;
+      max-width: 575px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 27px;
+   }
+
+   &__list {
+      display: flex;
+   }
+
+   &__item {
+      max-width: 288px;
+      margin-right: 24px;
+      span {
+         font-size: 48px;
+         line-height: 58px;
+         color: $color_green;
+      }
    }
 }
