@@ -46,8 +46,6 @@ h2 {
    text-align: center;
    line-height: 150%;
    padding: 9px 15px;
-   //  color: #fff;
-   // background-color: $color_text;
    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.05);
    transition: background-color 0.3s ease-in;
    border-radius: 6px;
@@ -89,17 +87,10 @@ h2 {
    align-items: center;
    justify-content: space-between;
    height: 72px;
-   &__logo {
-   }
-
    &__menu {
       display: flex;
       flex-direction: row;
    }
-
-   &__menu-list {
-   }
-
    &__menu-item {
       display: inline-flex;
       transition: color 0.3s ease-in;
@@ -110,8 +101,6 @@ h2 {
       &:not(:last-child) {
          margin: 0 32px 0 0;
       }
-   }
-   &__button {
    }
 }
 
@@ -199,7 +188,6 @@ h2 {
 .features {
    padding-top: 128px;
    display: flex;
-   // align-items: center;
    justify-content: space-between;
    &__logo {
       min-width: 50%;
@@ -237,7 +225,6 @@ h2 {
       justify-content: space-between;
       flex-wrap: wrap;
       margin-bottom: 127px;
-      // margin: 24px;
    }
 
    &__cards + &__cards {
@@ -362,9 +349,6 @@ h2 {
    &__subtitle {
       font-size: $text_18;
       margin-bottom: 29px;
-   }
-
-   &__logo {
    }
 }
 
