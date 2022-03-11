@@ -35,6 +35,7 @@ h2 {
    color: $color_text;
    border-radius: 100px;
 }
+
 .button {
    display: flex;
    min-height: 42px;
@@ -61,11 +62,16 @@ h2 {
       background-color: $color_text;
    }
    &-white {
+      display: inline-flex;
       color: rgb(0, 0, 0);
       background-color: #fff;
       border: 1px solid #000000;
    }
+   &-violet + &-white {
+      margin-left: 10px;
+   }
 }
+
 .nav {
    display: flex;
    align-items: center;
@@ -254,6 +260,7 @@ h2 {
       line-height: 21px;
    }
 }
+
 .stats {
    padding-top: 128px;
    padding-bottom: 128px;
@@ -312,6 +319,7 @@ h2 {
       }
    }
 }
+
 .team {
    margin-top: 128px;
    display: flex;
@@ -345,5 +353,34 @@ h2 {
    }
 
    &__logo {
+   }
+}
+
+.buy {
+   display: flex;
+   padding: 128px 0;
+   text-align: center;
+   align-items: center;
+   justify-content: center;
+   flex-direction: row;
+   &__content {
+      max-width: 768px;
+      text-align: center;
+      flex-direction: column;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+   }
+
+   &__title {
+      margin-top: 19px;
+      margin-bottom: 19px;
+      @include header-norm;
+   }
+
+   &__text {
+      max-width: 734px;
+      padding: 0 17px 29px 17px;
    }
 }
