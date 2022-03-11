@@ -15,7 +15,7 @@ h2 {
    font-size: 32px;
 }
 
-.wrapper {
+.container__black {
    /*  max-width: 1440px;
    margin: 0 auto;*/
    background-color: $color_text;
@@ -27,6 +27,12 @@ h2 {
    margin-right: auto;
    padding-left: 80px;
    padding-right: 80px;
+}
+.tag {
+   display: inline-block;
+   padding: 0 26px;
+   color: $color_text;
+   border-radius: 100px;
 }
 .button {
    display: flex;
@@ -160,5 +166,78 @@ h2 {
       &:not(:last-child) {
          margin: 0 48px 0 0;
       }
+   }
+}
+
+.features {
+   padding-top: 128px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   &__logo {
+      margin-right: 80px;
+   }
+
+   &__content {
+      max-width: 600px;
+   }
+
+   &__tag {
+      background: rgba(255, 193, 71, 0.6);
+      border: 2px solid #ffc147;
+      margin-bottom: 30px;
+   }
+
+   &__title {
+      @include header;
+      margin-bottom: 18px;
+      a {
+         color: $color_yellow;
+      }
+   }
+
+   &__subtitle {
+      font-size: $text_16;
+      margin-bottom: 30px;
+   }
+
+   &__cards {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-bottom: 151px;
+      // margin: 24px;
+   }
+
+   &__cards + &__cards {
+      margin: 24px;
+   }
+
+   &__card-item {
+      max-width: 288px;
+      margin-bottom: 24px;
+   }
+
+   &__card-title {
+      display: flex;
+      font-size: $text_18;
+      font-weight: 400;
+      margin-bottom: 12px;
+   }
+
+   &__card-img {
+      margin-right: 17px;
+   }
+
+   &__card-head {
+      color: $color_yellow;
+   }
+
+   &__card-body {
+      margin-left: 40px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 21px;
    }
 }
