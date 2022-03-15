@@ -83,6 +83,10 @@ h2 {
   background-color: #f6f6f6;
 }
 
+.container__blue {
+  background-color: #794eff;
+}
+
 .tag {
   display: inline-block;
   padding: 0 26px;
@@ -625,7 +629,6 @@ h2 {
 }
 
 .carousel {
-  margin-bottom: 128px;
   position: relative;
 }
 
@@ -715,4 +718,99 @@ h2 {
           justify-content: center;
   text-align: center;
   margin: 0 auto;
+}
+
+.container__blue {
+  padding: 64px;
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #fff;
+  border-radius: 48px;
+  gap: 80px;
+  height: 315px;
+}
+
+.form__content {
+  max-width: 540px;
+  min-width: 138px;
+  margin-left: 96px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.form__title {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: calc(35 / 32 * 100%);
+  margin-bottom: 12px;
+}
+
+.form__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.form__email {
+  max-width: 540px;
+  margin-right: 96px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form__content-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 16px;
+}
+
+.form__content-email {
+  padding-left: 24px;
+  width: 364px;
+  height: 44px;
+  margin-right: 16px;
+  padding-right: 25px;
+  border: 1px solid #000000;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 6px;
+}
+
+.form__content-sup {
+  color: #1e313b;
+  font-size: 12px;
+}
+
+.form__content-sup a {
+  padding-left: 5px;
+  padding-right: 4px;
+  color: #794eff;
 }

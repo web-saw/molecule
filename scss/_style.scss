@@ -28,6 +28,9 @@ h2 {
    &__gray {
       background-color: #f6f6f6;
    }
+   &__blue {
+      background-color: $color_violete;
+   }
 }
 .tag {
    display: inline-block;
@@ -449,7 +452,6 @@ h2 {
    }
 }
 .carousel {
-   margin-bottom: 128px;
    position: relative;
    & .slick-dots {
       display: flex;
@@ -522,4 +524,78 @@ h2 {
 
    &__item-text {
    }
+}
+.container {
+   &__blue {
+      padding: 64px;
+   }
+}
+.form {
+   display: flex;
+   //padding: 96px;
+   background-color: #fff;
+   border-radius: 48px;
+   gap: 80px;
+   height: 315px;
+
+   &__content {
+      max-width: 540px;
+      min-width: 138px;
+      margin-left: 96px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+   }
+
+   &__title {
+      @include header_norm;
+      margin-bottom: 12px;
+   }
+
+   &__text {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+   }
+
+   &__email {
+      max-width: 540px;
+      // margin-top: 120px;
+      margin-right: 96px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+   }
+   &__content-form {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 16px;
+   }
+
+   &__content-email {
+      padding-left: 24px;
+      width: 364px;
+      height: 44px;
+      margin-right: 16px;
+      padding-right: 25px;
+      border: 1px solid #000000;
+      box-sizing: border-box;
+      border-radius: 6px;
+   }
+
+   &__content-sup {
+      color: $color_text;
+      font-size: 12px;
+      //margin-bottom: 254px;
+      a {
+         padding-left: 5px;
+         padding-right: 4px;
+         color: $color_violete;
+      }
+   }
+}
+.button-white {
+}
+.button {
 }
