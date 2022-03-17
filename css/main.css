@@ -956,9 +956,6 @@ h2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  /*&__social-item{
-      fill: #ccc;
-   }*/
 }
 
 .footer__top-row {
@@ -1083,6 +1080,11 @@ h2 {
   margin: 0 12px 0 0;
 }
 
-.footer__social > ul > li > a:hover {
+.footer__social-item:hover {
   fill: #794eff;
 }
+
+/*
+.footer__social > ul > li > a:hover {
+   fill: $color_violete;
+}*/

@@ -777,11 +777,11 @@ h2 {
          margin: 0 12px 0 0;
       }
    }
-   /*&__social-item{
-      fill: #ccc;
-   }*/
+   &__social-item:hover {
+      fill: $color_violete;
+   }
 }
-
+/*
 .footer__social > ul > li > a:hover {
    fill: $color_violete;
-}
+}*/
