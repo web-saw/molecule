@@ -733,14 +733,11 @@ h2 {
    &__social {
       display: flex;
       transition: color 0.3s ease-in;
-
       flex-direction: row;
       li {
          display: inline-flex;
          transition: color 0.3s ease-in;
          :hover {
-            color: $color_violete;
-
             transition: color 0.3s ease-in;
          }
          &:not(:last-child) {
@@ -763,7 +760,6 @@ h2 {
    &__navbar {
       display: flex;
       transition: color 0.3s ease-in;
-
       flex-direction: row;
    }
    &__navbar-item {
@@ -774,12 +770,18 @@ h2 {
       line-height: 150%;
       color: #794eff;
       :hover {
-         color: $color_violete;
-
+         text-decoration: underline;
          transition: color 0.3s ease-in;
       }
       &:not(:last-child) {
          margin: 0 12px 0 0;
       }
    }
+   /*&__social-item{
+      fill: #ccc;
+   }*/
+}
+
+.footer__social > ul > li > a:hover {
+   fill: $color_violete;
 }

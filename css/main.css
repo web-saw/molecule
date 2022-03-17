@@ -956,6 +956,9 @@ h2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  /*&__social-item{
+      fill: #ccc;
+   }*/
 }
 
 .footer__top-row {
@@ -1025,7 +1028,6 @@ h2 {
 }
 
 .footer__social li :hover {
-  color: #794eff;
   -webkit-transition: color 0.3s ease-in;
   transition: color 0.3s ease-in;
 }
@@ -1072,11 +1074,15 @@ h2 {
 }
 
 .footer__navbar-item :hover {
-  color: #794eff;
+  text-decoration: underline;
   -webkit-transition: color 0.3s ease-in;
   transition: color 0.3s ease-in;
 }
 
 .footer__navbar-item:not(:last-child) {
   margin: 0 12px 0 0;
+}
+
+.footer__social > ul > li > a:hover {
+  fill: #794eff;
 }
