@@ -310,12 +310,7 @@ h2 {
 }
 
 .features__logo {
-  min-width: 50%;
-}
-
-.features__content {
-  max-width: 600px;
-  margin-left: 60px;
+  margin-right: 60px;
 }
 
 .features__tag {
